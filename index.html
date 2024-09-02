@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio de Karla</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: #fef6f6;
+        }
+
+        .header {
+            width: 100%;
+            height: 100%;
+            color: #333;
+        }
+
+        .barra-navegacion {
+            display: flex;
+            justify-content: space-between;
+            padding: 2em;
+            background-color: #f9c6c9;
+        }
+
+        .menu {
+            display: flex;
+            width: 40%;
+            justify-content: space-around;
+            padding-top: 1%;
+        }
+
+        .menu li {
+            list-style: none;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #fff;
+            padding: 10px 20px;
+        }
+
+        .menu li:hover a {
+            background-color: #e07b9d;
+        }
+
+        .soy-karla {
+            margin: 0 auto;
+            width: 80vw;
+            height: 80vh;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+            background-color: #fdf2f7;
+            padding: 1em;
+        }
+
+        .soy-karla img {
+            width: 350px;
+            z-index: 1;
+            margin-left: 18%;
+            border: 7px solid #f9c6c9;
+        }
+
+        h1 {
+            font-size: 3em;
+            color: #e07b9d;
+        }
+
+        .informacion p {
+            padding-top: 2%;
+            color: #666;
+        }
+
+        .karla {
+            font-size: 30px;
+        }
+
+        .karla span {
+            color: #e07b9d;
+        }
+
+        .karla a {
+            text-decoration: none;
+            color: #e07b9d;
+        }
+
+        .informacion span {
+            color: #e07b9d;
+        }
+
+        .sobre-mi {
+            width: 100%;
+            display: grid;
+            align-items: center;
+            background-color: white;
+            padding: 2em;
+            grid-template-columns: repeat(10, 1fr);
+        }
+
+        .sobre-mi img {
+            width: 100%;
+            grid-column: 1/5;
+            border-radius: 15px;
+        }
+
+        .informacion_sobre_mi {
+            grid-column: 5/10;
+            padding: 3em;
+        }    
+
+       .informacion_sobre_mi h2 {
+            font-size: 2em;
+            color: #e07b9d;
+       }
+
+       .informacion_sobre_mi p {
+        margin-bottom: 1em;
+        padding-top: 1%;
+        color: #666;
+        text-align: justify;
+       }
+
+       .button {
+        padding: 0.5em 1.5em;
+        font-size: 1em;
+        border-radius: 5px;
+        border: none;
+        background-color: #e07b9d;
+       }
+
+       .button a {
+        color: white;
+        text-decoration: none;
+       }
+
+       /* Footer */
+
+       .footer {
+        width: 100%;
+        height: 200px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        padding: 20px;
+        background-color: #f9c6c9;
+        flex-direction: column;
+       }
+
+       .footer-header {
+        font-size: 2em;
+        color: #333;
+       }
+
+       .derechos-reservados {
+        padding: 10px;
+        color: black;
+       }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="header">
+        <header>
+            <nav class="barra-navegacion">
+                <div class="karla">
+                    <a href="./index.html"><span>KM</span></a>
+                </div>
+                <ul class="menu">
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./pages/portafolio.html">Portafolio</a></li>
+                    <li><a href="./pages/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="soy-karla">
+            <div class="informacion">
+                <h1>Soy <span>Karla</span></h1>
+                <p>Soy Karla Marte me gusta el mundo tecnologico y me gusta aprender sobre la tecnologia, investigo temas sobre la computación y su uso.</p>
+            </div>
+            <img src="./img/PHOTO-2024-08-30-17-56-53.jpg" alt="">
+        </div>
+
+    </div>
+
+    <div class="sobre-mi">
+        <img src="./img/PHOTO-2024-08-30-17-57-17.jpg" alt="">
+        <div class="informacion_sobre_mi">
+            <h2>Sobre Mi</h2>
+            <p>Mi nombre es Karla Marte, soy de República Dominicana y pertenezco a la ciudad de Santo Domingo. Mis pasatiempos son hacer actividades domesticas, jugar en la computadora y relajarme en mis tiempos libres.
+            </p>
+            <p>Me gustaria estudiar la carrera de Ingenieria en Sistemas, practicar y aprender cosas nuevas, convertir
+                mis metas en realidad y cumplir mis sueños.</p>
+            <button class="button"><a href="./pages/portafolio.html">Conoce mis Proyectos</a></button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-header">
+            <h2>Karla Marte</h2>
+        </div>
+        <div class="derechos-reservados">
+            <p>&copy; 2024 Karla Marte | Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    
+
+</body>
+
+</html>

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio de Karla</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: #fef6f6;
+        }
+
+        .header {
+            width: 100%;
+            height: 100%;
+            color: #333;
+        }
+
+        .barra-navegacion {
+            display: flex;
+            justify-content: space-between;
+            padding: 2em;
+            background-color: #f9c6c9;
+        }
+
+        .menu {
+            display: flex;
+            width: 40%;
+            justify-content: space-around;
+            padding-top: 1%;
+        }
+
+        .menu li {
+            list-style: none;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #fff;
+            padding: 10px 20px;
+        }
+
+        .menu li:hover a {
+            background-color: #e07b9d;
+        }
+
+        .soy-karla {
+            margin: 0 auto;
+            width: 80vw;
+            height: 80vh;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+            background-color: #fdf2f7;
+            padding: 1em;
+        }
+
+        .soy-karla img {
+            width: 350px;
+            z-index: 1;
+            margin-left: 18%;
+            border: 7px solid #f9c6c9;
+        }
+
+        h1 {
+            font-size: 3em;
+            color: #e07b9d;
+        }
+
+        .informacion p {
+            padding-top: 2%;
+            color: #666;
+        }
+
+        .karla {
+            font-size: 30px;
+        }
+
+        .karla span {
+            color: #e07b9d;
+        }
+
+        .karla a {
+            text-decoration: none;
+            color: #e07b9d;
+        }
+
+        .informacion span {
+            color: #e07b9d;
+        }
+
+        .sobre-mi {
+            width: 100%;
+            display: grid;
+            align-items: center;
+            background-color: white;
+            padding: 2em;
+            grid-template-columns: repeat(10, 1fr);
+        }
+
+        .sobre-mi img {
+            width: 100%;
+            grid-column: 1/5;
+            border-radius: 15px;
+        }
+
+        .informacion_sobre_mi {
+            grid-column: 5/10;
+            padding: 3em;
+        }    
+
+       .informacion_sobre_mi h2 {
+            font-size: 2em;
+            color: #e07b9d;
+       }
+
+       .informacion_sobre_mi p {
+        margin-bottom: 1em;
+        padding-top: 1%;
+        color: #666;
+        text-align: justify;
+       }
+
+       .button {
+        padding: 0.5em 1.5em;
+        font-size: 1em;
+        border-radius: 5px;
+        border: none;
+        background-color: #e07b9d;
+       }
+
+       .button a {
+        color: white;
+        text-decoration: none;
+       }
+
+       /* Footer */
+
+       .footer {
+        width: 100%;
+        height: 200px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        padding: 20px;
+        background-color: #f9c6c9;
+        flex-direction: column;
+       }
+
+       .footer-header {
+        font-size: 2em;
+        color: #333;
+       }
+
+       .derechos-reservados {
+        padding: 10px;
+        color: black;
+       }
+
+       /* Pagina de contacto */
+
+       .contacto {
+        padding: 60px 40px;
+        text-align: center;
+       }
+
+       .contacto h2{
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+       }
+
+       .contacto p {
+        font-size: 1rem;
+        margin: 40px;
+       }
+
+       .info-contacto {
+        max-width: 600px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+       }
+
+       .grupo-formulario {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+       }
+
+       .grupo-formulario label {
+        margin-bottom: 8px;
+       }
+
+       .grupo-formulario input, .grupo-formulario textarea {
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+       }
+
+       .enviar-formulario {
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: none;
+        background-color: #f9c6c9;
+        cursor: pointer;
+       }
+
+       .enviar-formulario:hover {
+        background-color: #e07b9d;
+       }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="header">
+        <header>
+            <nav class="barra-navegacion">
+                <div class="karla">
+                    <a href="../index.html"><span>KM</span></a>
+                </div>
+                <ul class="menu">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../pages/portafolio.html">Portafolio</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="contacto">
+            <h2>Contáctame</h2>
+            <p>Ponte en contacto con migo, si quienes alguna pregunta o quieres saber mas sobre mis trabajos</p>
+
+            <form action="#" method="post" class="info-contacto">
+                <div class="grupo-formulario">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" id="nombre" required>
+                </div>
+
+                <div class="grupo-formulario">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+
+                <div class="grupo-formulario">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea name="mensaje" id="mensaje" rows="5" required></textarea>
+                </div>
+
+                <button type="submit" class="enviar-formulario">Enviar</button>
+
+            </form>
+
+        </div>
+
+    <footer class="footer">
+        <div class="footer-header">
+            <h2>Karla Marte</h2>
+        </div>
+        <div class="derechos-reservados">
+            <p>&copy; 2024 Karla Marte | Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    
+
+</body>
+
+</html>

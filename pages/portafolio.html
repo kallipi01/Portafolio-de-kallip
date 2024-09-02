@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio de Karla</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: #fef6f6;
+        }
+
+        .header {
+            width: 100%;
+            height: 100%;
+            color: #333;
+        }
+
+        .barra-navegacion {
+            display: flex;
+            justify-content: space-between;
+            padding: 2em;
+            background-color: #f9c6c9;
+        }
+
+        .menu {
+            display: flex;
+            width: 40%;
+            justify-content: space-around;
+            padding-top: 1%;
+        }
+
+        .menu li {
+            list-style: none;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #fff;
+            padding: 10px 20px;
+        }
+
+        .menu li:hover a {
+            background-color: #e07b9d;
+        }
+
+        .soy-karla {
+            margin: 0 auto;
+            width: 80vw;
+            height: 80vh;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+            background-color: #fdf2f7;
+            padding: 1em;
+        }
+
+        .soy-karla img {
+            width: 350px;
+            z-index: 1;
+            margin-left: 18%;
+            border: 7px solid #f9c6c9;
+        }
+
+        h1 {
+            font-size: 3em;
+            color: #e07b9d;
+        }
+
+        .informacion p {
+            padding-top: 2%;
+            color: #666;
+        }
+
+        .karla {
+            font-size: 30px;
+        }
+
+        .karla span {
+            color: #e07b9d;
+        }
+
+        .karla a {
+            text-decoration: none;
+            color: #e07b9d;
+        }
+
+        .informacion span {
+            color: #e07b9d;
+        }
+
+        .sobre-mi {
+            width: 100%;
+            display: grid;
+            align-items: center;
+            background-color: white;
+            padding: 2em;
+            grid-template-columns: repeat(10, 1fr);
+        }
+
+        .sobre-mi img {
+            width: 100%;
+            grid-column: 1/5;
+            border-radius: 15px;
+        }
+
+        .informacion_sobre_mi {
+            grid-column: 5/10;
+            padding: 3em;
+        }    
+
+       .informacion_sobre_mi h2 {
+            font-size: 2em;
+            color: #e07b9d;
+       }
+
+       .informacion_sobre_mi p {
+        margin-bottom: 1em;
+        padding-top: 1%;
+        color: #666;
+        text-align: justify;
+       }
+
+       .button {
+        padding: 0.5em 1.5em;
+        font-size: 1em;
+        border-radius: 5px;
+        border: none;
+        background-color: #e07b9d;
+       }
+
+       .button a {
+        color: white;
+        text-decoration: none;
+       }
+
+       /* Footer */
+
+       .footer {
+        width: 100%;
+        height: 200px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        padding: 20px;
+        background-color: #f9c6c9;
+        flex-direction: column;
+       }
+
+       .footer-header {
+        font-size: 2em;
+        color: #333;
+       }
+
+       .derechos-reservados {
+        padding: 10px;
+        color: black;
+       }
+
+       /* Pagina de Portfolio */
+
+       .proyectos {
+        padding: 60px 40px;
+       }
+
+       .proyectos h2 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        margin-left: 10%;
+       }
+
+       .proyectos p {
+        font-size: 1rem;
+        margin: 0 auto 40px auto;
+        max-width: 800px;
+       }
+
+       .caja-proyectos {
+        display: grid;
+        padding-top: 3%;
+        grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+       }
+
+       .carta-proyecto {
+        background-color: #f9c6c9;
+        padding: 20px;
+        border-radius: 15px;
+        text-align: left;
+        position: relative;
+        margin :1%;
+       }
+
+       .carta-proyecto img {
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: 15px;
+       }
+
+       .carta-proyecto h3 {
+        font-size: 1.4rem;
+        margin-bottom: 10px;
+       }
+
+       .carta-proyecto p {
+        font-size: 1rem;
+        margin-bottom: 15px;
+        text-align: justify;
+       }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="header">
+        <header>
+            <nav class="barra-navegacion">
+                <div class="karla">
+                    <a href="../index.html"><span>KM</span></a>
+                </div>
+                <ul class="menu">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="./portafolio.html">Portafolio</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="proyectos">
+            <h2>Proyectos</h2>
+            <div class="caja-proyectos">
+                <div class="carta-proyecto">
+                    <img src="../img/Captura de Pantalla 2024-08-30 a la(s) 10.47.51 p.m..png" alt="">
+                    <h3>Tienda Kallip</h3>
+                    <p>Tienda Kallip es una tienda online para venta de celulares y otros productos tecnologicos.</p>
+                </div>
+
+                <div class="carta-proyecto">
+                    <img src="../img/Captura de Pantalla 2024-08-30 a la(s) 10.49.17 p.m..png" alt="">
+                    <h3>Noticias Yudelina Mejía</h3>
+                    <p>Noticias Yudelina Mejía es una pagina web sobre noticias excusivas sobre Yudelina, una figura importante en el ámbito de las noticas recientes.</p>
+                </div>
+                </div>
+            </div>
+        </div>
+
+
+    <footer class="footer">
+        <div class="footer-header">
+            <h2>Karla Marte</h2>
+        </div>
+        <div class="derechos-reservados">
+            <p>&copy; 2024 Karla Marte | Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    
+
+</body>
+
+</html>
